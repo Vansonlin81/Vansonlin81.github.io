@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me｜小明的個人網站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div><strong>小明的網站</strong></div>
+    <nav>
+      <a href="index.html">About Me</a>
+      <a href="academic.html">Academic</a>
+      <a href="skills.html">Skills</a>
+      <a href="courses.html">Courses</a>
+      <button class="theme-toggle" onclick="toggleTheme()">🌗</button>
+    </nav>
+  </header>
+  <main>
+    <h1>About Me</h1>
+    <p>你好，我是小明，一位全端工程師，喜歡用程式設計實現創意。</p>
+  </main>
+  <footer>&copy; 2025 小明</footer>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
