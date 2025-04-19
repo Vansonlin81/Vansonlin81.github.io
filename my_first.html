@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小明｜全端工程師</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --text: #e0e0e0;
+      --accent: #66fcf1;
+      --subtext: #999;
+      --card: #1f1f1f;
+    }
+
+    body.light {
+      --bg: #ffffff;
+      --text: #222222;
+      --accent: #007acc;
+      --subtext: #555;
+      --card: #f0f0f0;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: linear-gradient(135deg, var(--card), var(--bg));
+      position: relative;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .theme-toggle:hover {
+      background-color: var(--accent);
+      color: var(--bg);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+
+    header p {
+      color: var(--subtext);
+      font-size: 1.2rem;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: var(--accent);
+      border-left: 5px solid var(--accent);
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background-color: var(--card);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--card);
+      color: var(--subtext);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <button class="theme-toggle" onclick="toggleTheme()">🌗 切換主題</button>
+    
+    <!-- 頭像圖片（你可以換成線上圖片） -->
+    <img src="me.jpg" alt="我的頭像" class="avatar">
+    <!-- <img src="https://example.com/your-photo.jpg" alt="我的頭像" class="avatar"> -->
+
+    <h1>小明</h1>
+    <p>全端工程師・打造網頁與未來</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>👨‍💻 關於我</h2>
+      <p>你好，我是小明，一位熱愛技術的全端工程師。熟悉 JavaScript、Python、Node.js 與雲端服務，喜歡打造高效能又有美感的網站。</p>
+    </section>
+
+    <section class="card">
+      <h2>💼 專業技能</h2>
+      <ul>
+        <li><strong>語言：</strong>JavaScript / Python / TypeScript</li>
+        <li><strong>前端框架：</strong>React / Vue / Tailwind CSS</li>
+        <li><strong>後端開發：</strong>Node.js / Express / Django</li>
+        <li><strong>資料庫：</strong>MySQL / MongoDB / PostgreSQL</li>
+        <li><strong>工具與部署：</strong>Git / Docker / Firebase / Vercel</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>📫 聯絡我</h2>
+      <p>Email：<a href="mailto:xiaoming.dev@example.com">xiaoming.dev@example.com</a></p>
+      <p>GitHub：<a href="https://github.com/xiaoming" target="_blank">github.com/xiaoming</a></p>
+      <p>LinkedIn：<a href="https://linkedin.com/in/xiaoming" target="_blank">linkedin.com/in/xiaoming</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 小明 • 用程式碼改變世界
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
