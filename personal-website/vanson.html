@@ -2,38 +2,31 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, iniotial-scale=1.0">
   <title>About Me｜北亦的個人網站</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
   
 <body>
-  <header>
-    <div><strong>北亦的網站</strong></div>
-    <!-- 頭像圖片（你可以換成線上圖片） -->
-    <img src="me.jpg" alt="我的頭像" class="avatar">
-    <!-- <img src="https://example.com/your-photo.jpg" alt="我的頭像" class="avatar"> -->
-    <nav>
-      <a href="index.html">About Me</a>
-      <a href="academic.html">Academic</a>
-      <a href="skills.html">Skills</a>
-      <a href="courses.html">Courses</a>
-      <button class="theme-toggle" onclick="toggleTheme()">🌗</button>
-    </nav>
+  <header class="fade-in">
+    <h1>北亦</h1>
+    <p>Full-time graduate student</p>
   </header>
+
+  <nav>
+    <a href="index.html">About Me</a>
+    <a href="academic.html">Academic</a>
+    <a href="skills.html">Skills</a>
+    <a href="courses.html">Courses</a>
+    <button class="theme-toggle" onclick="toggleTheme()">🌗</button>
+  </nav>
   
   <main>
-    <h1>About Me</h1>
-    <p>你好，我是北亦，一位全職在學研究生，喜歡用Python實現數學想法。
-      我時常位在數學題海裡載浮載沉、在AI宇宙中到處亂竄的人！請放心，我不是機器人（雖然有時上課太嗨會自動開啟連續講解模式），我是熱情＋活力的真人老師，一上課就自帶「數學能量場」與「AI探測雷達」。
-      
-      數學不該只是冷冰冰的公式堆疊，而是像在解開宇宙密碼一樣酷。而AI嘛，表面看起來好像是未來科技，其實它的根本，早就深深扎根在我們的老朋友——數學裡面！很多人一聽到 AI 就覺得：「啊這個一定超難，我只想躺平！」但其實，如果我們願意從數學這扇門進入，就能慢慢揭開 AI 的本質。不是照本宣科，也不是背神祕咒語，而是一步步「理解它為何這樣運作」。
-
-      更棒的是——我們還會親手實作自己的AI模型！從想法到數學，再到模型上線，讓你體驗到那種「我居然做出一個AI！」的魔幻瞬間。到時候，數學也不再只是想像，而會變成你打造未來工具的超能力！
-
-      準備好了嗎？讓我們一起在這門課裡：解碼數學、開啟AI，探索屬於你的未來宇宙！
-
-      Hi everyone, I'm Vanson, a math graduate student who loves using Python to explore mathematical ideas! I usually dives deep into the ocean of math problems and occasionally glitches into the AI universe! Don’t worry, I’m not a robot (though I do sometimes slip into automatic lecture mode when I get too excited). I’m a real human teacher, powered by passion and energy, equipped with a built-in Math Energy Field and an AI Detection Radar the moment class starts.
+    <section class="card fade-in">
+      <img src="me.jpg" alt="小明頭像" style="width: 150px; border-radius: 50%; margin-bottom: 1rem;">
+      <h1>Who am I?</h1>
+      <p>Hi, I'm Vanson, a math graduate student who loves using Python to explore mathematical ideas! I usually dives deep into the ocean of math problems and occasionally glitches into the AI universe! I am equippped with a built-in Math Energy Field and an AI Detection Radar the moment class starts. <br /> 
 
       I’ve always believed that math shouldn’t just be a cold pile of formulas. It should feel like cracking the secret code of the universe!And as for AI? Sure, it looks like futuristic tech on the outside—but at its core, it’s built on something very familiar to us: good old math!
 
@@ -41,10 +34,22 @@
 
       Even better? In this class, we’re not just talking the talk—we’ll actually build our own AI models! From ideas to math, then to real working systems—you’ll get to experience that magical moment of: “Wait... did I just create an AI?!” Suddenly, math won’t just be abstract anymore—it’ll become your very own superpower for building future tools.
 
-      So—are you ready? Let’s decode math, unlock AI, and start exploring your future universe—together!</p>
+      So—are you ready? Let’s decode math, unlock AI, and start exploring your future universe—together! <br />
+      
+      你好，我是北亦，一位全職在學研究生，喜歡用Python實現數學想法。<br /> 
+      
+      我時常位在數學題海裡載浮載沉、在AI宇宙中到處亂竄的人！一上課就自帶「數學能量場」與「AI探測雷達」。 <br /> 
+      
+      數學不該只是冷冰冰的公式堆疊，而是像在解開宇宙密碼一樣酷。而AI嘛，表面看起來好像是未來科技，其實它的根本，早就深深扎根在我們的老朋友——數學裡面！很多人一聽到 AI 就覺得：「啊這個一定超難，我只想躺平！」但其實，如果我們願意從數學這扇門進入，就能慢慢揭開 AI 的本質。不是照本宣科，也不是背神祕咒語，而是一步步「理解它為何這樣運作」。
+
+      更棒的是——我們還會親手實作自己的AI模型！從想法到數學，再到模型上線，讓你體驗到那種「我居然做出一個AI！」的魔幻瞬間。到時候，數學也不再只是想像，而會變成你打造未來工具的超能力！
+
+      準備好了嗎？讓我們一起在這門課裡：解碼數學、開啟AI，探索屬於你的未來宇宙！
+      </p> 
+    </section>
   </main>
   
-  <footer>&copy; 北亦</footer>
+  <footer>&copy; Vanson </footer>
   
   <script>
     function toggleTheme() {
