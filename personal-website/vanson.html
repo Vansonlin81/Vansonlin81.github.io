@@ -2,73 +2,139 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, iniotial-scale=1.0">
-  <title>About Me｜Vanson的個人網站</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanson | Ai × Math × Sustainability</title>
+  <link rel="stylesheet" href="dynamic-style.css">
 </head>
-
-  
 <body>
-  <header class="fade-in">
-    <h1>Vanson</h1>
-    <p>Full-time graduate student</p>
-  </header>
+  <!-- Dynamic Interactive Background -->
+  <div id="canvas-container">
+    <canvas id="network-canvas"></canvas>
+  </div>
 
+  <!-- Navigation -->
   <nav>
-    <a href="vanson.html">About Me</a>
-    <a href="academic.html">Academic</a>
-    <a href="skills.html">Skills</a>
-    <a href="courses.html">Courses</a>
-    <button class="theme-toggle" onclick="toggleTheme()">🌗</button>
+    <div class="logo">VANSON.</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#domains">Domains</a>
+      <a href="#experience">Experience</a>
+      <a href="#courses">Courses</a>
+    </div>
   </nav>
-  
+
   <main>
-    <section class="card fade-in">
-      <img src="me.jpg" alt="Vanson頭像" style="width: 150px; border-radius: 50%; margin-bottom: 1rem;">
-      <h1>Who am I?</h1>
-      <p>Hi, I'm Vanson, a math graduate student who loves using Python to explore mathematical ideas! I usually dives deep into the ocean of math problems and occasionally glitches into the AI universe! I am equippped with a built-in Math Energy Field and an AI Detection Radar the moment class starts. <br /> 
-
-      I’ve always believed that math shouldn’t just be a cold pile of formulas. It should feel like cracking the secret code of the universe!And as for AI? Sure, it looks like futuristic tech on the outside—but at its core, it’s built on something very familiar to us: good old math!
-
-      Now, I know what you’re thinking:“Ugh, AI? That sounds hard. Can I just lie down and take a nap?” But trust me—once we step through the math doorway, you’ll slowly begin to uncover the true nature of AI. It’s not about memorizing magic spells or blindly following instructions—it’s about understanding why and how it all works.
-
-      Even better? In this class, we’re not just talking the talk—we’ll actually build our own AI models! From ideas to math, then to real working systems—you’ll get to experience that magical moment of: “Wait... did I just create an AI?!” Suddenly, math won’t just be abstract anymore—it’ll become your very own superpower for building future tools.
-
-      So—are you ready? Let’s decode math, unlock AI, and start exploring your future universe—together! <br />
-      
-      你好，我是Vanson，一位全職在學研究生，喜歡用Python實現數學想法。<br /> 
-      
-      我時常位在數學題海裡載浮載沉、在AI宇宙中到處亂竄的人！一上課就自帶「數學能量場」與「AI探測雷達」。 <br /> 
-      
-      數學不該只是冷冰冰的公式堆疊，而是像在解開宇宙密碼一樣酷。而AI嘛，表面看起來好像是未來科技，其實它的根本，早就深深扎根在我們的老朋友——數學裡面！很多人一聽到 AI 就覺得：「啊這個一定超難，我只想躺平！」但其實，如果我們願意從數學這扇門進入，就能慢慢揭開 AI 的本質。不是照本宣科，也不是背神祕咒語，而是一步步「理解它為何這樣運作」。
-
-      更棒的是——我們還會親手實作自己的AI模型！從想法到數學，再到模型上線，讓你體驗到那種「我居然做出一個AI！」的魔幻瞬間。到時候，數學也不再只是想像，而會變成你打造未來工具的超能力！
-
-      準備好了嗎？讓我們一起在這門課裡：解碼數學、開啟AI，探索屬於你的未來宇宙！
-      </p> 
+    <!-- Hero / About Section -->
+    <section id="about">
+      <div class="hero-content reveal active">
+        <div class="hero-profile">
+          <img src="me.jpg" alt="Vanson" class="hero-img">
+          <div>
+            <h1>Hi, I'm <span class="gradient-text-ai">Vanson</span></h1>
+            <p class="hero-subtitle">Graduate student decoding the universe through <span class="gradient-text-math">Math</span>, empowering the future with <span class="gradient-text-ai">AI</span>, and preserving our world with <span class="gradient-text-sus">Sustainability</span>.</p>
+          </div>
+        </div>
+        
+        <div class="glass-card">
+          <p>
+            I'm a full-time math graduate student who loves using Python to explore mathematical ideas! I usually dive deep into the ocean of math problems and occasionally glitch into the AI universe. I am equipped with a built-in Math Energy Field and an AI Detection Radar.
+            <br><br>
+            I’ve always believed that math shouldn’t just be a cold pile of formulas. It should feel like cracking the secret code of the universe! And as for AI? Its core is built on something very familiar to us: good old math. Once we step through the math doorway, you’ll slowly begin to uncover the true nature of AI.
+            <br><br>
+            你好，我是Vanson，喜歡用Python實現數學想法。數學不該只是冷冰冰的公式堆疊，而是探尋宇宙的密碼。如果我們願意從數學進入，就能慢慢揭開AI的本質。讓我們一起解碼數學、開啟AI，探索屬於你我們的未來宇宙！
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class = "card fade-in">
-      <h1>Contact me</h1> 
-      <p><strong>Email :</strong>V0900173978@gmail.com </p>
+    <!-- Professional Domains Section -->
+    <section id="domains">
+      <h2 class="reveal">My <span class="gradient-text-ai">Domains</span></h2>
+      <div class="glass-grid reveal">
+        <!-- Math -->
+        <div class="glass-card math">
+          <div class="card-icon">📐</div>
+          <h3 class="gradient-text-math">Mathematics</h3>
+          <ul>
+            <li>Calculus: Limits / Derivatives</li>
+            <li>Geometry</li>
+            <li>Logic</li>
+            <li>Mathematical Formulation for Code</li>
+          </ul>
+        </div>
+        
+        <!-- AI/ML/DL -->
+        <div class="glass-card ai">
+          <div class="card-icon">🧠</div>
+          <h3 class="gradient-text-ai">AI, ML & DL</h3>
+          <ul>
+            <li><strong>Deep Learning:</strong> CNN, RNN, Transformer</li>
+            <li><strong>Machine Learning:</strong> SVM, XGBoost</li>
+            <li><strong>Gen AI:</strong> RAG, Natural Language Processing</li>
+            <li><strong>Tech:</strong> Python, APIs, MongoDB Data Analysis</li>
+          </ul>
+        </div>
+
+        <!-- Sustainability -->
+        <div class="glass-card sus">
+          <div class="card-icon">🌍</div>
+          <h3 class="gradient-text-sus">Sustainability</h3>
+          <ul>
+            <li><strong>Sustainability Manager</strong> (TAISE 53rd cohort)</li>
+            <li>Sustainable Report Scoring System</li>
+            <li>ESG Data Analytics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Academic -->
+    <section id="experience">
+      <h2 class="reveal">Experience & <span class="gradient-text-sus">Projects</span></h2>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>NCCU - Mathematical Sciences</h3>
+            <p>Undergraduate & Master's Degree</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>TransGlobe Life Insurance Inc.</h3>
+            <p>Digital Technology (數位科技處)</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Teaching Assistant</h3>
+            <p>Generative AI: Text and Image Synthesis, Computational Thinking & Intro to AI, Calculus, Geometry, Math Logic</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Projects</h3>
+            <p>True news? Fake news? | Find out internal fraudsters! | Sustainable Report Scoring System</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  
+
   <footer>
-    &copy; Vanson 
-      <div style="margin-top: 1rem;">
-        <a href="https://www.linkedin.com/in/vansonlin-150460241/" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: inherit;">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px; filter: invert(70%);">
-      LinkedIn
-    </a>
-  </div>
+    <p>&copy; Vanson. Powered by Math, AI & Sustainability.</p>
+    <div class="social-links">
+      <a href="mailto:V0900173978@gmail.com" title="Email me">✉️ V0900173978@gmail.com</a>
+      <a href="https://www.linkedin.com/in/vansonlin-150460241/" target="_blank" title="LinkedIn">LinkedIn</a>
+    </div>
   </footer>
-  
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('light');
-    }
-  </script>
-  
+
+  <script src="dynamic-app.js"></script>
 </body>
 </html>
