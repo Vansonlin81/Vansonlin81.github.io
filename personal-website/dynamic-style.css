@@ -7,6 +7,7 @@
   --accent-math: #a855f7; /* Purple */
   --accent-ai: #06b6d4; /* Cyan */
   --accent-sus: #10b981; /* Emerald */
+  --accent-thesis: #f43f5e; /* Rose */
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
 }
@@ -137,6 +138,13 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.gradient-text-thesis {
+  background: linear-gradient(to right, #fda4af, var(--accent-thesis));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* Hero Section */
 .hero-content {
